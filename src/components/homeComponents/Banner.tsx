@@ -16,8 +16,8 @@ const Banner = () => {
     return (
         <>
 
-            <div className="relative h-fit bg-[black]">
-                <section className="banner-sec relative h-fit rounded-[10px] overflow-hidden">
+            <div className="relative h-fit">
+                <section className="banner-sec relative h-fit rounded-[10px] overflow-hidden bg-[black] bg-no-repeat bg-cover bg-center" style={{ backgroundImage: "url('/assets/bnn-bg_converted.webp')" }}>
                     <div className="relative h-full">
                         <div className="absolute inset-0">
                             <BannerParticles />

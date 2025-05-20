@@ -186,8 +186,8 @@ body {
 
 .main--header {
   background-color: rgba(255, 255, 255, 0.026);
-  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.042);
   padding: 12px 40px;
   border-radius: 6px;
@@ -459,7 +459,22 @@ section {
 }
 
 
+.flip-card:hover .fc-front {
+  opacity: 0;
+  /* transition-delay: 0.3s; */
+  backface-visibility: hidden;
+}
 
+.flip-card .fc-front {
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.flip-card:hover .fc-back {
+  transition: all 0.7s;
+  backface-visibility: visible;
+  z-index: 1;
+}
 
 .cell-maxed>div {
   aspect-ratio: 610/210;
@@ -736,8 +751,9 @@ section {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   mask-image: radial-gradient(transparent 50.5%, #ff0000 30%);
-  backdrop-filter: blur(4px);
+  -webkit-mask-image: radial-gradient(transparent 50.5%, #ff0000 30%);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   z-index: 1;
 }
 
