@@ -1,115 +1,50 @@
 import React from 'react'
 import ServiceCard from '@/components/serviceComponents/ServiceCard'
-import Image from 'next/image'
 
-const ServiceGrid = () => {
+interface Service {
+    icon: string;
+    title: string;
+    description: string;
+    benefits: string[];
+    buttonText: string;
+    buttonLink: string;
+}
+
+interface ServiceGridProps {
+    services: Service[];
+    title?: string;
+    subtitle?: string;
+    description?: string;
+}
+
+const ServiceGrid: React.FC<ServiceGridProps> = ({
+    services,
+    title = "Le Soluzioni per la Tua Connettività Aziendale",
+    subtitle = "Sottoservizi",
+    description = "Offriamo una gamma di servizi pensati per ottimizzare la connessione e le comunicazioni aziendali, per garantire affidabilità, sicurezza e prestazioni elevate in ogni situazione."
+}) => {
     return (
         <>
             <section className='sv-grid-sec w-full py-[60px] rounded-[10px] bg-[#080808]'>
                 <div className="container">
                     <div className="prt-row flex flex-col justify-between items-center">
                         <div className="sv-grid-col-1 max-w-[970px]">
-                            <span className="btn-grey darken mb-[32px] mx-auto">Sottoservizi</span>
-                            <h2 className='sec-title text-white text-center mb-[32px] !font-semibold'>Le Soluzioni per la Tua <br /> Connettività Aziendale </h2>
-                            <p className='sec-parah text-[#A7A7A7] text-center'>Offriamo una gamma di servizi pensati per ottimizzare la connessione e le comunicazioni aziendali, per garantire affidabilità, sicurezza e prestazioni elevate in ogni situazione.</p>
+                            <span className="btn-grey darken mb-[32px] mx-auto">{subtitle}</span>
+                            <h2 className='sec-title text-white text-center mb-[32px] !font-semibold'>{title}</h2>
+                            <p className='sec-parah text-[#A7A7A7] text-center'>{description}</p>
                         </div>
                         <div className="sv-grid-col-2 grid grid-cols-3 gap-[40px] w-full mt-[40px]">
-                            <ServiceCard
-                                icon="/assets/srcv-i1.png"
-                                title="VoIP (Voice over IP)"
-                                description="Linee voce aziendali basate su tecnologia VoIP per comunicazioni efficienti e a costi ridotti, con un'ottima qualità del servizio."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i1.png"
-                                title="VoIP (Voice over IP)"
-                                description="Linee voce aziendali basate su tecnologia VoIP per comunicazioni efficienti e a costi ridotti, con un'ottima qualità del servizio."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i2.png"
-                                title="VPN"
-                                description="Soluzioni sicure per l'accesso remoto ai sistemi aziendali e la protezione dei dati, per garantire un network sicuro."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i3.png"
-                                title="Hosting"
-                                description="Servizi di hosting con alte performance e scalabilità, garantendo sicurezza e velocità per le applicazioni aziendali e il sito web."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i4.png"
-                                title="Server Colocation"
-                                description="Colocation sicura nel Data Center Vianova: rack dedicati, connettività veloce, alimentazione ridondata e infrastruttura Tier IV per aziende che gestiscono il proprio hardware con massima affidabilità."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i5.png"
-                                title="Virtual Data Center"
-                                description="Cloud flessibile e potente: con il Virtual Data Center Vianova crei e gestisci server virtuali su misura, con alte prestazioni, sicurezza e controllo totale."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i6.png"
-                                title="Meeting"
-                                description="Piattaforma di videoconferenze accessibili senza installare software aggiuntivo, per una collaborazione immediata e senza barriere."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i7.png"
-                                title="Conference Call"
-                                description="Chiamate di gruppo per favorire il lavoro remoto e la collaborazione a distanza, con alta qualità e facilità d'uso."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i8.png"
-                                title="Drive"
-                                description="Spazio di archiviazione e condivisione su cloud, per garantire che i dati aziendali siano facilmente accessibili e sicuri."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i9.png"
-                                title="Mail e PEC"
-                                description="Soluzioni di posta elettronica aziendale con sicurezza avanzata, per una gestione professionale delle comunicazioni."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i10.png"
-                                title="800 e Numeri Aziendali"
-                                description="Numerazioni dedicate per assistenza clienti, marketing e supporto, per una gestione professionale delle aziende."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
-                            <ServiceCard
-                                icon="/assets/srcv-i11.png"
-                                title="Servizio Clienti - 145"
-                                description="Il supporto Vianova, attivo tramite il numero 145, offre assistenza tecnica e commerciale senza attese. Un team di esperti risponde dall'Italia, garantendo un rapporto diretto e continuativo."
-                                benefits={["Connessione veloce e stabile", "Alta disponibilità e bassa latenza", "Adattamento alle esigenze di scalabilità aziendale"]}
-                                buttonText="Mostra benefici"
-                                buttonLink="#"
-                            />
+                            {services.map((service, index) => (
+                                <ServiceCard
+                                    key={index}
+                                    icon={service.icon}
+                                    title={service.title}
+                                    description={service.description}
+                                    benefits={service.benefits}
+                                    buttonText={service.buttonText}
+                                    buttonLink={service.buttonLink}
+                                />
+                            ))}
                         </div>
                     </div>
                 </div>

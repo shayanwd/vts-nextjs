@@ -28,7 +28,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                     </div>
                     <div className="flex flex-col h-full justify-between">
                         <div>
-                            <h3 className="text-[28px] font-light text-white leading-[120%] mb-[12px]">{title}</h3>
+                            <h3 className="text-[28px] font-light text-white leading-[120%] mb-[12px] max-w-[280px]">{title}</h3>
                             <p className="text-[#A7A7A7] text-[16px] leading-[150%] tracking-[0.3px]">{description}</p>
                         </div>
                         <Link
