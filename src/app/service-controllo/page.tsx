@@ -1,4 +1,4 @@
-import React from 'react'
+"use client";
 import ServiceBanner from "@/components/serviceComponents/ServiceBanner";
 import ServiceGrid from "@/components/serviceComponents/ServiceGrid";
 import ServiceDetails from "@/components/serviceComponents/ServiceDetails";
