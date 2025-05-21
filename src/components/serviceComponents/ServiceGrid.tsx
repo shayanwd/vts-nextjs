@@ -33,7 +33,7 @@ const ServiceGrid: React.FC<ServiceGridProps> = ({
                             <h2 className='sec-title text-white text-center mb-[32px] !font-semibold'>{title}</h2>
                             <p className='sec-parah text-[#A7A7A7] text-center'>{description}</p>
                         </div>
-                        <div className="sv-grid-col-2 grid grid-cols-3 gap-[40px] w-full mt-[40px]">
+                        <div className="sv-grid-col-2 flex flex-wrap justify-center gap-[40px] w-full mt-[40px]">
                             {services.map((service, index) => (
                                 <ServiceCard
                                     key={index}

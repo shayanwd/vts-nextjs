@@ -458,6 +458,17 @@ section {
   max-height: 33px;
 }
 
+.dual-cell .sv-grid-col-2 {
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flip-card {
+  width: 100%;
+  max-width: 400px;
+  flex: 400px;
+}
 
 .flip-card:hover .fc-front {
   opacity: 0;

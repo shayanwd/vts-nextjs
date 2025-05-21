@@ -20,12 +20,14 @@ const ServiceTelefoniciPage = () => {
                 mainImage="/assets/telefonici-cell_converted.webp"
                 iconImage="/assets/telefonici-ico.svg"
             />
-            <ServiceGrid
-                services={servicesData}
-                title="Le Soluzioni per la Tua Comunicazione Aziendale"
-                subtitle="Sottoservizi"
-                description="Dalle soluzioni cloud alle centraline tradizionali, offriamo sistemi telefonici personalizzati per ogni esigenza, che semplificano la gestione delle comunicazioni aziendali e ottimizzano le performance operative."
-            />
+            <div className="dual-cell">
+                <ServiceGrid
+                    services={servicesData}
+                    title="Le Soluzioni per la Tua Comunicazione Aziendale"
+                    subtitle="Sottoservizi"
+                    description="Dalle soluzioni cloud alle centraline tradizionali, offriamo sistemi telefonici personalizzati per ogni esigenza, che semplificano la gestione delle comunicazioni aziendali e ottimizzano le performance operative."
+                />
+            </div>
             <ServiceProcess />
             <ServiceReviews />
         </div>
