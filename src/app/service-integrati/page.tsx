@@ -18,7 +18,7 @@ const ServiceIntegratiPage = () => {
                 title={<><b>Connettività Affidabile,</b> <br /> Servizi Efficaci</>}
                 description="Forniamo una vasta gamma di soluzioni integrate, dalla connessione Internet a alta velocità a servizi avanzati in cloud, tutti progettati per garantire prestazioni elevate, sicurezza e scalabilità. Assicurati che la tua azienda sia sempre connessa e pronta a crescere."
                 mainImage="/assets/svc-col_converted.webp"
-                iconImage="/assets/svc-col-ico_converted.webp"
+                iconImage="/assets/svc-col-ico_converted.svg"
             />
             <ServiceGrid
                 services={servicesData}
