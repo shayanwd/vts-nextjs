@@ -45,7 +45,7 @@ const NostriPunti = () => {
         numbers[0]?.classList.add('active');
 
         // Create scroll trigger for the entire section
-        ScrollTrigger.create({
+        const trigger = ScrollTrigger.create({
             trigger: section,
             pin: true,
             start: "top top",
@@ -81,7 +81,9 @@ const NostriPunti = () => {
         });
 
         return () => {
-            ScrollTrigger.getAll().forEach(t => t.kill());
+            if (trigger) trigger.kill();
+            slides.forEach(slide => slide && slide.classList.remove('active', 'prev', 'next'));
+            numbers.forEach(num => num && num.classList.remove('active'));
         };
     }, []);
 

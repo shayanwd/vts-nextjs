@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 interface ServiceCardProps {
     icon: string;
     title: string;
@@ -24,7 +24,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                 {/* Front Side */}
                 <div className="fc-front absolute w-full h-full bg-[#121212] rounded-[10px] p-[30px] pt-[60px] backface-hidden">
                     <div className="service-ico absolute top-0 right-0 w-[100px] h-[100px]">
-                        <img src={icon} alt="" className="w-full h-full object-contain object-right-top block" />
+                        <Image src={icon} alt="" className="w-full h-full object-contain object-right-top block" width={100} height={100} />
                     </div>
                     <div className="flex flex-col h-full justify-between">
                         <div>
@@ -48,8 +48,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                             <li key={index} className="flex items-start gap-[8px]">
                                 <span className="text-[#D31E1E] text-2xl">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M3 13.3333C3 13.3333 4.5 14 6.5 17C6.5 17 6.78485 16.5192 7.32133 15.7526M17 6C14.7085 7.14577 12.3119 9.55181 10.3879 11.8223" stroke="#FF0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M8 13.3333C8 13.3333 9.5 14 11.5 17C11.5 17 17 8.5 22 6" stroke="#FF0000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M3 13.3333C3 13.3333 4.5 14 6.5 17C6.5 17 6.78485 16.5192 7.32133 15.7526M17 6C14.7085 7.14577 12.3119 9.55181 10.3879 11.8223" stroke="#FF0000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M8 13.3333C8 13.3333 9.5 14 11.5 17C11.5 17 17 8.5 22 6" stroke="#FF0000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </span>
                                 <span className="text-[#A7A7A7] text-[16px] leading-[150%] tracking-[0.3px]">{benefit}</span>

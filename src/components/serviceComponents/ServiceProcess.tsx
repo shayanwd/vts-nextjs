@@ -32,7 +32,7 @@ const ServiceProcess = () => {
                         <div className="svp-col1 max-w-[580px]">
                             <span className="btn-grey mb-[60px]">Come lavoriamo</span>
                             <h2 className='sec-title mb-[32px]'><b>Processo</b></h2>
-                            <p className='sec-parah text-[#7D7D7D]'>Dalla valutazione iniziale alla messa in opera, seguiamo un approccio strutturato per garantire un'installazione efficiente e un funzionamento ottimale nel tempo, offrendo sicurezza, affidabilità e continuità operativa.</p>
+                            <p className='sec-parah text-[#7D7D7D]'>Dalla valutazione iniziale alla messa in opera, seguiamo un approccio strutturato per garantire un&apos;installazione efficiente e un funzionamento ottimale nel tempo, offrendo sicurezza, affidabilità e continuità operativa.</p>
                         </div>
                         <div className="svp-col2 svp-timeline relative max-w-[600px] flex-1 ml-auto">
                             <div className="svp-scroller">
