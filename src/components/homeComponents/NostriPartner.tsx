@@ -1,5 +1,4 @@
-'use client';
-import Image from 'next/image';
+
 import PartnerBlock from './PartnerBlock';
 import BannerSlideImg1 from '../../assets/prt-01.svg';
 import BannerSlideImg2 from '../../assets/prt-02.svg';

@@ -70,6 +70,8 @@ const TextChanger = () => {
 
         return () => {
             clearInterval(interval);
+            scrollTl.scrollTrigger?.kill();
+            scrollTl.kill();
         };
     }, []);
 

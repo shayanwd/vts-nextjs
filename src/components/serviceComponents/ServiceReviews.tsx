@@ -56,7 +56,7 @@ const ServiceReviews = () => {
                     <span className="btn-grey mb-[32px] mx-auto">Relativo a questo servizio</span>
                     <h2 className='sec-title mb-[32px]'>Progetti <b className="font-bold">Fatti</b></h2>
                     <p className="text-[#7D7D7D] sec-parah  max-w-[910px] mx-auto">
-                        Abbiamo implementato soluzioni di connettività avanzata e servizi integrati per aziende di diverse dimensioni, garantendo un'ottimizzazione continua dei flussi aziendali. Qui puoi trovare esperienze e testimonianze di chi ha scelto i nostri servizi per migliorare la propria infrastruttura tecnologica.
+                        Abbiamo implementato soluzioni di connettiv&agrave; avanzata e servizi integrati per aziende di diverse dimensioni, garantendo un&apos;ottimizzazione continua dei flussi aziendali. Qui puoi trovare esperienze e testimonianze di chi ha scelto i nostri servizi per migliorare la propria infrastruttura tecnologica.
                     </p>
                 </div>
             </div>

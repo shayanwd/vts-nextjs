@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -19,7 +17,7 @@ const AboutExplore = () => {
                 <span className="btn-grey mb-[32px] mx-auto">VISUALIZZA SERVIZI</span>
                 <h2 className="text-[56px] md:text-[100px] font-bold leading-[100%] mb-[20px] text-black">Esplora I nostri Servizi</h2>
                 <p className="text-[#7D7D7D] sec-parah max-w-3xl mx-auto font-normal">
-                    Realizziamo importanti investimenti in attrezzature, strumenti e infrastrutture, rafforzando la nostra capacità di offrire soluzioni all'avanguardia.
+                    Realizziamo importanti investimenti in attrezzature, strumenti e infrastrutture, rafforzando la nostra capacit&agrave; di offrire soluzioni all&apos;avanguardia.
                 </p>
                 <Link href="/services" className="btn-lined mt-[20px]">View Services</Link>
             </div>

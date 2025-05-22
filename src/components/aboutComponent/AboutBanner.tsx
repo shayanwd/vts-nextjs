@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react'
 import Image from 'next/image'
 import backgroundImage from '../../assets/about-bg.png'
@@ -20,9 +18,9 @@ const AboutBanner = () => {
                     </h1>
 
                     <p className="font-normal parah">
-                        Da oltre trent'anni offriamo soluzioni di telecomunicazione con competenza e passione. La nostra
-                        esperienza ci consente di garantire servizi affidabili e all'avanguardia, sempre attenti alle
-                        esigenze dei clienti. Crediamo nella disponibilità e nell'innovazione per offrire supporto
+                        Da oltre trent&apos;anni offriamo soluzioni di telecomunicazione con competenza e passione. La nostra
+                        esperienza ci consente di garantire servizi affidabili e all&apos;avanguardia, sempre attenti alle
+                        esigenze dei clienti. Crediamo nella disponibilit&agrave; e nell&apos;innovazione per offrire supporto
                         costante e costruire relazioni di fiducia.
                     </p>
                 </div>

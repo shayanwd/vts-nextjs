@@ -5,10 +5,11 @@ import ServiceDetails from "@/components/serviceComponents/ServiceDetails";
 import ServiceProcess from "@/components/serviceComponents/ServiceProcess";
 import ServiceReviews from "@/components/serviceComponents/ServiceReviews";
 import { servicesData } from '@/data/serviceTelefonici'
-
+import Fresher from '@/components/Fresher';
 const ServiceTelefoniciPage = () => {
     return (
         <div>
+            <Fresher />
             <ServiceBanner
                 backgroundImage="/assets/telefonici-banner_converted.webp"
                 title="Sistemi Telefonici" paragraph="Offriamo soluzioni avanzate per la gestione delle comunicazioni aziendali. Dai centralini in cloud alle soluzioni on-premises, i nostri sistemi telefonici garantiscono flessibilità, scalabilità e integrazione con i tuoi sistemi aziendali esistenti." linkTo="/" linkText="Inizia Adesso"

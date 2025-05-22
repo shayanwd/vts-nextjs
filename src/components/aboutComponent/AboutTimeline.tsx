@@ -1,8 +1,6 @@
-"use client";
+'use client';
 
 import React from 'react'
-import { motion, useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 
 const milestones = [
     {
@@ -42,7 +40,7 @@ const AboutTimeline = () => {
                 <div className="relative">
                     <div className="absolute left-1/2 top-0 bottom-0 w-[4px] bg-[#BDBDBD] z-0 rounded-full -translate-x-1/2" />
                     <div className="flex flex-col relative z-10">
-                        {milestones.map((milestone, index) => (
+                        {milestones.map((milestone) => (
                             <div key={milestone.year} className="grid grid-cols-2 gap-[80px] timeline-item items-center">
                                 <div className="text-left max-w-[545px] tl-col1 w-fit">
                                     <span className='block px-[28px] py-[10px] bg-[#FF0000] rounded-[6px] font-[NeueMachina] font-extrabold text-white leading-[120%] text-[20px] w-fit'>

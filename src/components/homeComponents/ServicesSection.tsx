@@ -1,4 +1,4 @@
-"use client";
+
 import ServiceBlock from './ServiceBlock'
 import img1 from '../../assets/servv-01.webp'
 import img2 from '../../assets/servv-02.webp'
@@ -26,14 +26,14 @@ const ServicesSection = () => {
                             img2={img1}
                             title="Connettività e Servizi Integrati"
                             description="Soluzioni di connettività ad alte prestazioni con Internet dedicato, VPN sicure e servizi cloud scalabili. Offriamo hosting, server virtuali, numerazioni aziendali e strumenti per la comunicazione digitale."
-                            link="/"
+                            link="/service-integrati"
                         />
                         <ServiceBlock
                             img={img2}
                             img2={img2}
                             title="Sistemi Telefonici"
                             description="Soluzioni per la gestione delle comunicazioni aziendali, con centralini cloud scalabili, centrali telefoniche on-premises e strumenti avanzati per il monitoraggio e l’integrazione delle chiamate."
-                            link="/"
+                            link="/service-telefonici"
                         />
                     </div>
                     <div className="grid grid-cols-2 gap-[10px]">
@@ -42,7 +42,7 @@ const ServicesSection = () => {
                             img2={img3}
                             title="Sistemi di Videosorveglianza"
                             description="Firewall, protezione perimetrale, sistemi di monitoraggio delle minacce e strategie di backup e disaster recovery. Soluzioni per la protezione della rete aziendale e la sicurezza dei dati."
-                            link="/"
+                            link="/service-videosorveglianza"
                         />
                         <div className='row-span-2'>
                             <ServiceBlock
@@ -50,7 +50,7 @@ const ServicesSection = () => {
                                 img2={img5}
                                 title="Networking"
                                 description="Progettazione, installazione e gestione di reti aziendali cablate e wireless. Soluzioni per la gestione centralizzata della rete, certificazione degli impianti e manutenzione per garantire affidabilità e sicurezza."
-                                link="/"
+                                link="/service-networking"
                             />
                         </div>
                         <ServiceBlock
@@ -58,7 +58,7 @@ const ServicesSection = () => {
                             img2={img4}
                             title="Sistemi Protezione e Controllo"
                             description="Impianti di allarme, controllo accessi, lettura targhe e sistemi di evacuazione vocale. Soluzioni per la protezione di ambienti aziendali con tecnologie avanzate per il monitoraggio e la sicurezza fisica."
-                            link="/"
+                            link="/service-protezione-controllo"
                         />
                     </div>
                 </div>

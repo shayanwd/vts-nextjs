@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react'
 
 const AboutChoose = () => {
@@ -36,7 +34,7 @@ const AboutChoose = () => {
                         </h1>
 
                         <p className="font-normal parah text-[#7D7D7D]">
-                            Selezioniamo con cura i nostri partner per garantire soluzioni affidabili e all'avanguardia. Collaboriamo solo con aziende leader nel settore, offrendo servizi di alta qualità che rispondono alle reali esigenze dei nostri clienti.
+                            Selezioniamo con cura i nostri partner per garantire soluzioni affidabili e all&apos;avanguardia. Collaboriamo solo con aziende leader nel settore, offrendo servizi di alta qualit&agrave; che rispondono alle reali esigenze dei nostri clienti.
                         </p>
                     </div>
                 </div>

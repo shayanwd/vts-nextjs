@@ -1,5 +1,3 @@
-"use client";
-
 import React from 'react'
 import Image from 'next/image'
 import backgroundImage from '../../assets/detail-bg.png'
@@ -24,9 +22,9 @@ const AboutDetails = () => {
                             </h1>
 
                             <p className="font-normal parah">
-                                La nostra missione è semplificare e potenziare le comunicazioni aziendali attraverso
+                                La nostra missione &egrave; semplificare e potenziare le comunicazioni aziendali attraverso
                                 tecnologie avanzate, realizzando un servizio su misura. Ci impegniamo a fornire soluzioni
-                                che migliorano l'efficienza operativa, creando valore per i nostri clienti.
+                                che migliorano l&apos;efficienza operativa, creando valore per i nostri clienti.
                             </p>
                         </div>
 

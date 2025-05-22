@@ -1,6 +1,5 @@
-"use client";
 import React, { useRef, useEffect, useState } from 'react';
-import { gsap } from 'gsap';
+import Image from 'next/image';
 
 // --- Review Data ---
 type Review = {
@@ -198,10 +197,12 @@ const ReviewsOrbit = () => {
                             onClick={() => setModalIdx(bubble.idx!)}
                         >
                             {bubble.type === 'avatar' ? (
-                                <img
+                                <Image
                                     src={reviews[bubble.idx!].avatarUrl}
                                     alt={reviews[bubble.idx!].name}
                                     className="w-12 h-12 rounded-full object-cover border-2 border-white shadow"
+                                    width={48}
+                                    height={48}
                                     draggable={false}
                                 />
                             ) : (

@@ -41,7 +41,7 @@ const Banner = () => {
                                     <p className="sec-parah text-white max-w-3xl">
                                         Ogni azienda ha esigenze uniche: per questo sviluppiamo soluzioni integrate che combinano reti
                                         aziendali, telecomunicazioni, cloud e sistemi di controllo avanzati. Offriamo tecnologie
-                                        avanzate per garantire infrastrutture solide, comunicazioni efficienti e un'operatività senza
+                                        avanzate per garantire infrastrutture solide, comunicazioni efficienti e un&apos;operativit&agrave; senza
                                         interruzioni.
                                     </p>
                                 </div>
