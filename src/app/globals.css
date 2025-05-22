@@ -195,7 +195,7 @@ body {
   top: 30px;
   left: 30px;
   right: 0px;
-  z-index: 100;
+  z-index: 101;
   width: calc(100% - 60px);
   background-image: url('/assets/header-bg.png');
   background-position: center;
