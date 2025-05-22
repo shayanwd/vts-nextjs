@@ -184,6 +184,24 @@ body {
   padding: 0px 10px;
 }
 
+.header-mm {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background-color: #000000;
+  background-image: url(/assets/mm-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #ffffff07;
+  border-radius: 6px;
+  width: calc(100% - 60px);
+  padding: 117px 40px 60px;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  right: 0;
+}
+
 .main--header {
   background-color: rgba(255, 255, 255, 0.026);
   -webkit-backdrop-filter: blur(10px);
@@ -217,12 +235,17 @@ body {
   width: fit-content;
 }
 
-.menu ul li a {
-  color: #fff;
+.menu ul li a,
+.menu ul li button {
+  color: hsla(0, 0%, 100%, 0.6);
   font-size: 14px;
   font-weight: 500;
-  text-transform: uppercase;
+  cursor: pointer;
+}
 
+
+body:has(.header-mm) .menu ul li button {
+  color: hsla(0, 0%, 100%, 1);
 }
 
 
