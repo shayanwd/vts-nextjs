@@ -81,7 +81,9 @@ const NostriPunti = () => {
         });
 
         return () => {
-            trigger.kill();
+            if (trigger) trigger.kill();
+            slides.forEach(slide => slide && slide.classList.remove('active', 'prev', 'next'));
+            numbers.forEach(num => num && num.classList.remove('active'));
         };
     }, []);
 

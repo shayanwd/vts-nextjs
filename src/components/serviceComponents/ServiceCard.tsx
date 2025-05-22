@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 interface ServiceCardProps {
     icon: string;
     title: string;
@@ -24,7 +24,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                 {/* Front Side */}
                 <div className="fc-front absolute w-full h-full bg-[#121212] rounded-[10px] p-[30px] pt-[60px] backface-hidden">
                     <div className="service-ico absolute top-0 right-0 w-[100px] h-[100px]">
-                        <img src={icon} alt="" className="w-full h-full object-contain object-right-top block" />
+                        <Image src={icon} alt="" className="w-full h-full object-contain object-right-top block" width={100} height={100} />
                     </div>
                     <div className="flex flex-col h-full justify-between">
                         <div>

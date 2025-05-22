@@ -25,6 +25,7 @@ const words = [
 const TextChanger = () => {
     const [currentWord, setCurrentWord] = useState(words[0]);
     const wordRef = useRef<HTMLSpanElement>(null);
+    const sectionRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         // Text change animation
@@ -56,7 +57,7 @@ const TextChanger = () => {
         // Scroll trigger animation
         const scrollTl = gsap.timeline({
             scrollTrigger: {
-                trigger: ".text-changer-section",
+                trigger: sectionRef.current,
                 start: "top center",
                 end: "bottom center",
                 scrub: 1,
@@ -70,13 +71,13 @@ const TextChanger = () => {
 
         return () => {
             clearInterval(interval);
-            scrollTl.scrollTrigger?.kill();
-            scrollTl.kill();
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            gsap.globalTimeline.clear();
         };
     }, []);
 
     return (
-        <section className="text-changer-section py-20 relative">
+        <section ref={sectionRef} className="text-changer-section py-20 relative">
             <Image
                 src={hangerBg}
                 alt="Background"

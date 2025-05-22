@@ -26,7 +26,7 @@ const ServicesSection = () => {
                             img2={img1}
                             title="Connettività e Servizi Integrati"
                             description="Soluzioni di connettività ad alte prestazioni con Internet dedicato, VPN sicure e servizi cloud scalabili. Offriamo hosting, server virtuali, numerazioni aziendali e strumenti per la comunicazione digitale."
-                            link="/service-integrati"
+                            link="/service-informatica"
                         />
                         <ServiceBlock
                             img={img2}
@@ -42,7 +42,7 @@ const ServicesSection = () => {
                             img2={img3}
                             title="Sistemi di Videosorveglianza"
                             description="Firewall, protezione perimetrale, sistemi di monitoraggio delle minacce e strategie di backup e disaster recovery. Soluzioni per la protezione della rete aziendale e la sicurezza dei dati."
-                            link="/service-videosorveglianza"
+                            link="/service-sistemi"
                         />
                         <div className='row-span-2'>
                             <ServiceBlock
@@ -58,7 +58,7 @@ const ServicesSection = () => {
                             img2={img4}
                             title="Sistemi Protezione e Controllo"
                             description="Impianti di allarme, controllo accessi, lettura targhe e sistemi di evacuazione vocale. Soluzioni per la protezione di ambienti aziendali con tecnologie avanzate per il monitoraggio e la sicurezza fisica."
-                            link="/service-protezione-controllo"
+                            link="/service-controllo"
                         />
                     </div>
                 </div>
